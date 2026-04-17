@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>your name | Portfolio</title>
+
+<style>
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background: #f4f6f9;
+    color: #333;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: #111827;
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    max-width: 1100px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #3b82f6;
+}
+
+/* ===== HERO ===== */
+.hero {
+    background: linear-gradient(to right, #3b82f6, #111827);
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.hero h2 {
+    font-size: 40px;
+}
+
+.hero span {
+    color: #facc15;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #facc15;
+    color: #111;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+}
+
+/* ===== SECTIONS ===== */
+section {
+    padding: 80px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* ===== ABOUT ===== */
+.about p {
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* ===== SKILLS ===== */
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills-list span {
+    background: #3b82f6;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+/* ===== PROJECTS ===== */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* ===== CONTACT ===== */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #3b82f6;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background: #2563eb;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+    header .container {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <h1>Alok's portfolio</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="container">
+        <h2>Hello, I'm <span>Alok Sharma</span></h2>
+        <p>Frontend Developer | UI Designer | Problem Solver</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </div>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>
+            I am a web developer who loves building modern, responsive, beautiful
+            and user-friendly websites. I enjoy turning ideas into reality using code.
+        </p>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+    <div class="container">
+        <h2>My Skills</h2>
+        <div class="skills-list">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+        </div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+    <div class="container">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="card">
+                <h3>project one</h3>
+                
+            </div>
+            <div class="card">
+                <h3>project two</h3>
+            </div>
+            <div class="card">
+                <h3>project three</h3>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Alok Sharma | All rights reserved</p>
+</footer>
+
+</body>
+</html>
+
